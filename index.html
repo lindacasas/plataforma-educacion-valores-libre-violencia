@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educación con valores y libre de violencia</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <a href="./html/valores.html" id="enlace-solidaridad" onclick="guardarValor('solidaridad')">
+        <h2>
+            Solidaridad
+        </h2>
+    </a>
+
+    <a href="./html/valores.html" id="enlace-respeto" onclick="sessionStorage.setItem('valor', 'respeto')">
+        <h2>
+            Respeto
+        </h2>
+    </a>
+
+    <a href="./html/valores.html" id="enlace-responsabilidad" onclick="guardarValor('responsabilidad')">
+        <h2>Responsabilidad</h2>
+    </a>
+    
+
+    <script>
+        function guardarValor(valor) {
+            sessionStorage.setItem('valor', valor);
+        }
+    </script>
+</body>
+</html>
